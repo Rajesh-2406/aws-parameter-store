@@ -7,11 +7,11 @@ resource "aws_ssm_parameter" "params" {
 
 variable "params"{
  default = [
-   { name = "roboshop.frontend.catalogue_url", value = "http://catalogue.devops2406.xyz:8080/", type = "String" },
-   { name = "roboshop.frontend.user_url", value = "http://user.devops2406.xyz:8080/", type = "String" },
-   { name = "roboshop.frontend.cart_url", value = "http://cart.devops2406.xyz8080/", type = "String" },
-   { name = "roboshop.frontend.payment_url", value = "http://payment.devops2406.xyz:8080/", type = "String" },
-   { name = "roboshop.frontend.shipping_url", value = "http://shipping.devops2406.xyz:8080/", type = "String" },
+   { name = "roboshop.frontend.catalogue_url", value = "http://catalogue.dev.devops2406.xyz:8080/", type = "String" },
+   { name = "roboshop.frontend.user_url", value = "http://user.dev.devops2406.xyz:8080/", type = "String" },
+   { name = "roboshop.frontend.cart_url", value = "http://cart.dev.devops2406.xyz8080/", type = "String" },
+   { name = "roboshop.frontend.payment_url", value = "http://payment.dev.devops2406.xyz:8080/", type = "String" },
+   { name = "roboshop.frontend.shipping_url", value = "http://shipping.dev.devops2406.xyz:8080/", type = "String" },
 
  ]
 }
