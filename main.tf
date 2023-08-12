@@ -32,7 +32,7 @@ variable "params"{
 
 
    { name = "roboshop.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
-   { name = "roboshop.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
 
  ]
 }
