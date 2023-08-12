@@ -31,8 +31,8 @@ variable "params"{
    { name = "roboshop.user.mongo_url", value = "mongodb://mongodb-dev.devops2406.xyz/users", type = "String" },
 
 
-   { name = "roboshop.disapatch.amqp_pass", value = "roboshop123", type = "SecureString" },
-   { name = "roboshop.disapatch.amqp_pass", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
 
  ]
 }
