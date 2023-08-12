@@ -7,11 +7,11 @@ resource "aws_ssm_parameter" "params" {
 
 variable "params"{
  default = [
-   { name = "roboshop.frontend.catalogue_url", value = "catalogue-dev.devops2406.xyz", type = "String" },
-   { name = "roboshop.frontend.user_url", value = "user-dev.devops2406.xyz", type = "String" },
-   { name = "roboshop.frontend.cart_url", value = "cart-dev.devops2406.xyz", type = "String" },
-   { name = "roboshop.frontend.payment_url", value = "payment-dev.devops2406.xyz", type = "String" },
-   { name = "roboshop.frontend.shipping_url", value = "shipping-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.catalogue_url", value = "http://catalogue-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.user_url", value = "http://user-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.cart_url", value = "http://cart-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.payment_url", value = "http://payment-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.shipping_url", value = "http://shipping-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.cart.redis_host", value = "redis-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.cart.catalogue_host", value = "catalogue-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.cart.catalogue_port", value = "8080", type = "String" },
