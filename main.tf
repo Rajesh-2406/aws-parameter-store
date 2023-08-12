@@ -7,11 +7,32 @@ resource "aws_ssm_parameter" "params" {
 
 variable "params"{
  default = [
-   { name = "roboshop.frontend.catalogue_url", value = "http://catalogue-dev.devops2406.xyz:8080/", type = "String" },
-   { name = "roboshop.frontend.user_url", value = "http://user-dev.devops2406.xyz:8080/", type = "String" },
-   { name = "roboshop.frontend.cart_url", value = "http://cart-dev.devops2406.xyz8080/", type = "String" },
-   { name = "roboshop.frontend.payment_url", value = "http://payment-dev.devops2406.xyz:8080/", type = "String" },
-   { name = "roboshop.frontend.shipping_url", value = "http://shipping-dev.devops2406.xyz:8080/", type = "String" },
+   { name = "roboshop.frontend.catalogue_url", value = "http://catalogue-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.user_url", value = "http://user-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.cart_url", value = "http://cart-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.payment_url", value = "http://payment-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.frontend.shipping_url", value = "http://shipping-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.cart.redis_host", value = "http://redis-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.cart.catalogue_host", value = "http://catalogue-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.cart.catalogue_port", value = "8080", type = "String" },
+   { name = "roboshop.catalogue.mongo", value = "true", type = "String" },
+   { name = "roboshop.catalogue.mongo_url", value = "mongodb://mongodb-dev.devops2406.xyz:27017/catalogue", type = "String" },
+   { name = "roboshop.dispatch.amqp_host", value = "http://rabbitmq-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.dispatch.amqp_user", value = "roboshop", type = "String" },
+   { name = "roboshop.payment.cart_host", value = "cart-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.payment.cart_port", value = "8080", type = "String" },
+   { name = "roboshop.payment.user_host", value = "user-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.payment.user_port", value = "8080", type = "String" },
+   { name = "roboshop.payment.amqp_host", value = "rabbitmq-dev.devops2406.xyz", type = "String" },
+   {  name = "roboshop.payment.amqp_user", value = "roboshop", type = "String" },
+   { name = "roboshop.shipping.cart_endpoint", value = "cart-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.shipping.db_host", value = "mysql-dev.devops2406.xyz", type = "String" },
+   { name = "roboshop.user.mongo", value = "true", type = "String" },
+   { name = "roboshop.user.mongo_url", value = "mongodb://mongodb-dev.devops2406.xyz/users", type = "String" },
+
+
+   { name = "roboshop.disapatch.amqp_pass", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.disapatch.amqp_pass", value = "roboshop123", type = "SecureString" },
 
  ]
 }
