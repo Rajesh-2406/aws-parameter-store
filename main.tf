@@ -24,7 +24,7 @@ variable "params"{
    { name = "roboshop.payment.user_host", value = "user-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.payment.user_port", value = "8080", type = "String" },
    { name = "roboshop.payment.amqp_host", value = "rabbitmq-dev.devops2406.xyz", type = "String" },
-   {  name = "roboshop.payment.amqp_user", value = "roboshop", type = "String" },
+   { name = "roboshop.payment.amqp_user", value = "roboshop", type = "String" },
    { name = "roboshop.shipping.cart_endpoint", value = "cart-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.shipping.db_host", value = "mysql-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.user.mongo", value = "true", type = "String" },
