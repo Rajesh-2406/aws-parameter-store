@@ -28,11 +28,11 @@ variable "params"{
    { name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.dev.shipping.db_host", value = "mysql-dev.devops2406.xyz", type = "String" },
    { name = "roboshop.dev.user.mongo", value = "true", type = "String" },
-   { name = "roboshop.dev.user.redis_host", value = "redis-dev.devops2406.xyz", type = "string"},
+   { name = "roboshop.dev.user.redis_host", value = "redis-dev.devops2406.xyz", type = "String"},
    { name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.devops2406.xyz/users", type = "String" },
 
   #passwords
-   { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "string" },
-   { name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type = "string" },
+   { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
  ]
 }
