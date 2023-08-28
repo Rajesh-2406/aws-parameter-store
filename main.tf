@@ -34,5 +34,10 @@ variable "params"{
   #passwords
    { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+   { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+
+
+
  ]
 }
