@@ -3,6 +3,8 @@ resource "aws_ssm_parameter" "params" {
  name = var.params[count.index].name
  type = var.params[count.index].type
  value = var.params[count.index].value
+  overwrite = true
+  key_id = "841e1b80-4724-43b6-939b-ec575eebb2b6"
 }
 
 variable "params"{
@@ -30,12 +32,16 @@ variable "params"{
    { name = "roboshop.dev.user.mongo", value = "true", type = "String" },
    { name = "roboshop.dev.user.redis_host", value = "redis-dev.devops2406.xyz", type = "String"},
    { name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.devops2406.xyz/users", type = "String" },
+   { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+   { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String" },
 
-  #passwords
+
+
+   #passwords
    { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
-   { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
 
 
 
