@@ -34,6 +34,7 @@ variable "params"{
    { name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.devops2406.xyz/users", type = "String" },
    { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
    { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String" },
+   { name = "roboshop.dev.docdb.username", value = "roboshop", type = "String" },
 
 
 
@@ -42,6 +43,7 @@ variable "params"{
    { name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
+   { name = "roboshop.dev.docdb.password", value = "roboshop123", type = "SecureString" },
 
 
 
