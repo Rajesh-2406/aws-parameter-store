@@ -46,7 +46,7 @@ variable "params"{
    { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.docdb.password", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://roboshop:@docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "String" },
-   {name = "roboshop.dev.catalogue.docdb_endpoint",value ="docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com", type = String },
+   {name = "roboshop.dev.catalogue.docdb_endpoint",value ="docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com", type = "String" },
 
 
 
