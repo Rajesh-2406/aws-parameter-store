@@ -38,6 +38,7 @@ variable "params"{
    { name = "roboshop.dev.docdb.username", value = "roboshop", type = "String" },
    { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
    { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String" },
+   { name = "roboshop.dev.mysql.endpoint", value = "rds-dev.cluster-c2cprqmiz9av.us-east-1.rds.amazonaws.com", type = "String" },
 
 
 
