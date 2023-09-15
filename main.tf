@@ -49,9 +49,9 @@ variable "params"{
    { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.docdb.password", value = "roboshop123", type = "SecureString" },
    { name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
-   { name = "roboshop.dev.catalogue.docdb_endpoint",value ="docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com", type = "String" },
+   { name = "roboshop.dev.catalogue.docdb_endpoint",value ="docdb-dev.cluster-c2cprqmiz9av.us-east-1.docdb.amazonaws.com", type = "String" },
 
-   { name = "roboshop.dev.user.docdb_endpoint",value ="docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com", type = "String" },
+   { name = "roboshop.dev.user.docdb_endpoint",value ="docdb-dev.cluster-c2cprqmiz9av.us-east-1.docdb.amazonaws.com", type = "String" },
    { name = "roboshop.dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
 
  ]
