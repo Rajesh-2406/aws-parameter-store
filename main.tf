@@ -51,9 +51,7 @@ variable "params"{
    { name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
    { name = "roboshop.dev.catalogue.docdb_endpoint",value ="mongo --ssl --host docdb-dev.cluster-crpaxg4qag9m.us-east-1.docdb.amazonaws.com", type = "String" },
    { name = "roboshop.dev.user.docdb_endpoint",value ="docdb-dev.cluster-c2cprqmiz9av.us-east-1.docdb.amazonaws.com", type = "String" },
-   { name = "roboshop.dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
-
-
+   { name = "roboshop.dev.user.mongo_url", value = "mongodb://roboshop:roboshop@123@docdb-prod-0.crpaxg4qag9m.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
 
 ##
 
@@ -100,7 +98,7 @@ variable "params"{
 { name = "roboshop.prod.catalogue.docdb_endpoint",value ="mongo --ssl --host docdb-prod.cluster-crpaxg4qag9m.us-east-1.docdb.amazonaws.com", type = "String" },
 
 { name = "roboshop.prod.user.docdb_endpoint",value ="docdb-prod.cluster-crpaxg4qag9m.us-east-1.docdb.amazonaws.com", type = "String" },
-{ name = "roboshop.prod.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-prod-0.c2cprqmiz9av.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
+{ name = "roboshop.prod.user.mongo_url", value = "mongodb://roboshop:roboshop@123@docdb-prod-0.crpaxg4qag9m.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
 
 ]
 }
