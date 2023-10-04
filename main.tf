@@ -100,5 +100,11 @@ variable "params"{
 { name = "roboshop.prod.user.docdb_endpoint",value ="docdb-prod.cluster-crpaxg4qag9m.us-east-1.docdb.amazonaws.com", type = "String" },
 { name = "roboshop.prod.user.mongo_url", value = "mongodb://roboshop:roboshop@123@docdb-prod-0.crpaxg4qag9m.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false", type = "SecureString" },
 
-]
+
+   ## nexus
+   { name = "roboshop.nexus.username", value = "admin", type = "String" },
+   { name = "roboshop.nexus.password", value = "DevOps321", type = "SecureString" },
+
+
+ ]
 }
