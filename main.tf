@@ -102,7 +102,8 @@ variable "params"{
 
 
    ## nexus
-   { name = "roboshop.nexus.username", value = "admin", type = "SecureString" },
+
+   { name = "roboshop.nexus.username", value = "admin", type = "String" },
    { name = "roboshop.nexus.password", value = "DevOps321", type = "SecureString" },
 
 
