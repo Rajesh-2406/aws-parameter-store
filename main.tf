@@ -4,7 +4,7 @@ resource "aws_ssm_parameter" "params" {
  type       = var.params[count.index].type
  value      = var.params[count.index].value
   overwrite = true
-  key_id    = "arn:aws:kms:us-east-1:765371225572:key/391d5412-55a3-4072-89de-fca5ccc4c9f3"
+  key_id    = "391d5412-55a3-4072-89de-fca5ccc4c9f3"
 }
 
 variable "params"{
